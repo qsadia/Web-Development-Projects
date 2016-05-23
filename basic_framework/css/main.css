@@ -1,6 +1,6 @@
-* {
+/** {
 	border: 1px solid red !important;
-}
+}*/
 
 * {
 	-webkit-box-sizing: border-box;
@@ -14,12 +14,14 @@
 	margin: 0;
 }
 
+
+
 h1 {
 	font-family: 'Lato', sans-serif;
 	color: #747704;
 	text-align: right;
 	font-weight: 200;
-	font-size: 300%;
+	font-size: 400%;
 	font-weight: lighter;
 }
 
@@ -37,6 +39,10 @@ body{
 	margin-right: 10px;
 }
 
+@media only screen and (max-width: 300px) {
+	color: blue;
+}
+
 .header_block {
 	margin-bottom: 20px;
 }
@@ -51,7 +57,12 @@ body{
 }
 
 .main_pic {
-	margin-bottom: 40px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px ;
+		/*margin-left: auto;
+	margin-right: auto;*/
+	margin-bottom: 20px;
 	margin-top: 20px;
 }
 
@@ -59,28 +70,28 @@ body{
 	font-family: 'Lato', sans-serif;
 	color: #BCBBBB;
 	text-align: left;
-	margin-left: 20px;
+	margin-left: 10px;
 	margin-bottom: 10px;
 	font-weight: 600;
-	font-size: 200%;
+	font-size: 300%;
 }
 
-.img1 {
-	margin-left: 0px;
+.left_image {
+	padding: 10px;
 }
 
 .centre_image {
-	margin-left: 20px;
+	padding: 10px;
 }
 
 .right_image {
-	margin-left: 40px;
+	padding: 10px;
 }
 
 .pic_title {
 	font-family: 'Lato', sans-serif;
 	color: #747704;
-	font-size: 200%;
+	font-size: 250%;
 	font-weight: 600;
 	text-align: center;
 }
@@ -92,9 +103,18 @@ body{
 	text-align: center;
 }
 
+.empty_space {
+	padding: 10px;
+}
+
+/*
+Grid class contains other divs 
+margin auto - to centre content horizontally
+*/
 .grid {
-    max-width: 1180px;
+    max-width: 1000px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .row {
