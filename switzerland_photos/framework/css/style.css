@@ -18,6 +18,10 @@ h3 {
 	font-size: 200%;
 }
 
+img, embed, object, video {
+  max-width: 100%;
+}
+
 .line {
 	height: 4px;
 	background: #bcbbbb;
